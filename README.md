@@ -1,6 +1,6 @@
 # OpenAI Billing Analysis
 
-![GitHub Tag](https://img.shields.io/github/v/tag/skit-ai/openai_billing_analysis)
+![GitHub Tag](https://img.shields.io/github/v/tag/skit-ai/openai-billing-analysis)
 
 Command line tool to provide per key $ usage of OpenAI API keys on daily and
 monthly level.
