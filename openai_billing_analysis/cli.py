@@ -26,7 +26,12 @@ def activity_cost(activity: dict) -> float:
     if activity["usage_type"] != "text":
         raise ValueError(f"Unsupported usage type {activity['usage_type']}.")
 
-    price = PRICES[activity["model"]]
+    try:
+        price = PRICES[activity["model"]]
+    except KeyError:
+        warnings.warn(f"Unsupported model {activity['model']} found. Skipping. "
+                      "Know that your actual price might be higher than shown value.")
+        return 0
 
     return (price["input"] * activity["n_context_tokens_total"] / 1000) + \
         (price["output"] * activity["n_generated_tokens_total"] / 1000)
