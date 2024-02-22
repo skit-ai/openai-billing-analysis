@@ -19,13 +19,7 @@ from gpt_cost_estimator import CostEstimator
 from pydash import py_
 from tabulate import tabulate
 
-# NOTE: Using https://github.com/michaelachmann/gpt-cost-estimator/ with some
-#       changes as of 13th Feb 2024
-PRICES = {
-    **CostEstimator.PRICES,
-    "gpt-3.5-turbo-0125": {"input": 0.0005, "output": 0.0015},
-    "gpt-4-0125-preview": {"input": 0.01, "output": 0.03}
-}
+PRICES = CostEstimator.PRICES
 
 
 def activity_cost(activity: dict) -> float:
