@@ -19,7 +19,7 @@ monthly level.
 Install the package using:
 
 ```shell
-pip install https://github.com/skit-ai/openai-billing-analysis/releases/download/0.1.1/openai_billing_analysis-0.1.1-py3-none-any.whl
+pip install https://github.com/skit-ai/openai-billing-analysis/releases/download/0.1.2/openai_billing_analysis-0.1.2-py3-none-any.whl
 ```
 
 For using, download JSON billing data from the activity tab of [the usage
