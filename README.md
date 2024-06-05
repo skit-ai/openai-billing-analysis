@@ -12,7 +12,7 @@ monthly level.
 > [!CAUTION]
 > Pricing for tokens is coming from
 > [gpt-cost-estimator](https://github.com/michaelachmann/gpt-cost-estimator/)
-> with updates (see `cli.py` in our repository) that were done on 13th Feb 2024.
+> with updates (see `cli.py` in our repository) with minor addition done on 5th June 2024.
 > The pricing information might need to be refreshed so be careful while
 > interpreting anything.
 
